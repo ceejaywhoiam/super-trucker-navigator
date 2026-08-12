@@ -1,0 +1,25 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://media.db.com/images/public/6a7a9232f6883e82e688fa26/080c38448_generated_image.png" />
+    <link rel="apple-touch-icon" href="https://media.db.com/images/public/6a7a9232f6883e82e688fa26/080c38448_generated_image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Super Trucker Navigator" />
+    <meta name="application-name" content="Super Trucker Navigator" />
+    <meta name="description" content="Trucker GPS with truck-aware routes, weight/height/width safety, diesel stops, rest areas, truck parking, governor speed alerts, and turn-by-turn voice navigation." />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Super Trucker Navigator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
