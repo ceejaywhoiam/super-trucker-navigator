@@ -70,6 +70,53 @@ After pushing your changes to git, open the Base44 dashboard and publish the app
 base44 dashboard open
 ```
 
+## Android (Capacitor) Packaging
+
+This repository now includes Capacitor Android packaging for `Super Trucker Navigator` with package ID `com.ceejaywhoiam.supertruckernavigator`.
+
+### Prerequisites
+
+- Node.js dependencies installed (`npm install`)
+- Android Studio (latest stable)
+- JDK 17+
+- Android SDK installed through Android Studio
+
+### Build web assets
+
+```bash
+npm run build
+```
+
+### Sync Capacitor + Android project
+
+```bash
+npm run cap:sync
+```
+
+or build and sync in one step:
+
+```bash
+npm run android:sync
+```
+
+### Open Android Studio
+
+```bash
+npm run cap:open:android
+```
+
+### Build release Android App Bundle (.aab)
+
+```bash
+npm run android:bundle
+```
+
+The generated bundle is at:
+
+`android/app/build/outputs/bundle/release/app-release.aab`
+
+For Play Store release, configure signing (keystore + `key.properties`/Gradle signing config) in your Android project before uploading.
+
 ## Docs & Support
 
 Documentation: [https://docs.db.com/Integrations/Using-GitHub](https://docs.db.com/Integrations/Using-GitHub)
