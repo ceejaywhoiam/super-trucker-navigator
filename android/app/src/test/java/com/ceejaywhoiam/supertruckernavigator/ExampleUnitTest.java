@@ -1,4 +1,4 @@
-package com.getcapacitor.myapp;
+package com.ceejaywhoiam.supertruckernavigator;
 
 import static org.junit.Assert.*;
 
