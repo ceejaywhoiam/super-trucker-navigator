@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Super Trucker Navigator</string>
+    <string name="title_activity_main">Super Trucker Navigator</string>
+    <string name="package_name">com.ceejaywhoiam.supertruckernavigator</string>
+    <string name="custom_url_scheme">com.ceejaywhoiam.supertruckernavigator</string>
+</resources>
