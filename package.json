@@ -9,7 +9,7 @@
     "cap:sync": "npx cap sync android",
     "cap:open:android": "npx cap open android",
     "android:sync": "npm run build && npm run cap:sync",
-    "android:bundle": "npm run android:sync && cd android && ./gradlew bundleRelease",
+    "android:bundle": "npm run android:sync && npx cap build android --androidreleasetype AAB",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
